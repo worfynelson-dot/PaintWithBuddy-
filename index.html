@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaintWithBuddy 🎨</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="landing-body">
+
+  <!-- Floating paint splashes background -->
+  <div class="paint-bg">
+    <div class="splash s1"></div>
+    <div class="splash s2"></div>
+    <div class="splash s3"></div>
+    <div class="splash s4"></div>
+    <div class="splash s5"></div>
+    <div class="splash s6"></div>
+    <div class="splash s7"></div>
+    <div class="splash s8"></div>
+  </div>
+
+  <div class="landing-container">
+    <div class="logo-section">
+      <div class="logo-icon">
+        <svg viewBox="0 0 100 100" width="80" height="80">
+          <circle cx="50" cy="50" r="45" fill="#FF6B6B" opacity="0.9"/>
+          <circle cx="35" cy="35" r="8" fill="#FFE66D"/>
+          <circle cx="60" cy="30" r="6" fill="#4ECDC4"/>
+          <circle cx="45" cy="55" r="7" fill="#A78BFA"/>
+          <circle cx="65" cy="55" r="5" fill="#45B7D1"/>
+          <path d="M30 70 Q50 50 70 70" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1 class="logo-title">Paint<span class="highlight">With</span>Buddy</h1>
+      <p class="logo-subtitle">Create art together in real-time! 🎨✨</p>
+    </div>
+
+    <div class="card-container">
+      <!-- Username Input -->
+      <div class="username-section">
+        <label for="username">Your Name</label>
+        <div class="input-wrapper">
+          <span class="input-icon">👤</span>
+          <input type="text" id="username" placeholder="Enter your name..." maxlength="20" autocomplete="off">
+        </div>
+      </div>
+
+      <!-- Create Room Card -->
+      <div class="action-card create-card">
+        <div class="card-icon">🖌️</div>
+        <h2>Create a Room</h2>
+        <p>Start a new canvas and invite your buddy!</p>
+        <button id="createRoomBtn" class="btn btn-create">
+          <span>Create Room</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Join Room Card -->
+      <div class="action-card join-card">
+        <div class="card-icon">🤝</div>
+        <h2>Join a Room</h2>
+        <p>Enter a room code to paint with your buddy!</p>
+        <div class="input-wrapper">
+          <span class="input-icon">🔑</span>
+          <input type="text" id="roomCodeInput" placeholder="Enter room code..." maxlength="20" autocomplete="off">
+        </div>
+        <button id="joinRoomBtn" class="btn btn-join">
+          <span>Join Room</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13 12H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="features-strip">
+      <div class="feature-item">
+        <span>🎨</span> Live Canvas
+      </div>
+      <div class="feature-item">
+        <span>🎤</span> Voice Chat
+      </div>
+      <div class="feature-item">
+        <span>🖌️</span> Many Brushes
+      </div>
+      <div class="feature-item">
+        <span>💬</span> Text Chat
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

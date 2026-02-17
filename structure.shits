@@ -1,0 +1,13 @@
+project/
+├── index.html
+├── room.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   ├── canvas.js
+│   ├── voice.js
+│   └── room.js
+├── server.js
+├── package.json
+└── vercel.json
